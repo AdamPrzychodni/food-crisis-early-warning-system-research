@@ -1,0 +1,19 @@
+# Data Handling & Core Libraries
+pandas
+numpy
+openpyxl
+
+# Jupyter Environment
+notebook
+jupyterlab
+
+# Natural Language Processing (NLP)
+scikit-learn  # For text vectorization (TF-IDF, etc.) and modeling
+nltk          # For tokenization, stop words, and other text processing
+
+# Geospatial Analysis
+geopandas     # To work with geospatial data if you go that route
+
+# Data Visualization
+matplotlib
+seaborn
