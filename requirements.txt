@@ -2,6 +2,8 @@
 pandas
 numpy
 openpyxl
+geopandas
+requests
 
 # Jupyter Environment
 notebook
@@ -10,6 +12,8 @@ jupyterlab
 # Natural Language Processing (NLP)
 scikit-learn  # For text vectorization (TF-IDF, etc.) and modeling
 nltk          # For tokenization, stop words, and other text processing
+arabic-reshaper # To handle Arabic text reshaping
+python-bidi # To handle bidirectional text (like Arabic)
 
 # Geospatial Analysis
 geopandas     # To work with geospatial data if you go that route
@@ -17,3 +21,5 @@ geopandas     # To work with geospatial data if you go that route
 # Data Visualization
 matplotlib
 seaborn
+wordcloud
+
