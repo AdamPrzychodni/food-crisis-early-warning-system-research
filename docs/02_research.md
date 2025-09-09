@@ -1,0 +1,23 @@
+# Literature Review and Domain Research
+
+## 1. Introduction: The Emerging Paradigm of News-Based Crisis Analytics
+
+Traditional food security monitoring, which relies on infrequent and resource-intensive household surveys, often fails to capture the rapid onset of food crises. The resulting temporal lag can delay humanitarian intervention, particularly in data-scarce and conflict-affected regions like the Mashriq. This challenge necessitates a paradigm shift towards high-frequency, unconventional data sources that can provide more immediate and granular insights.
+
+A growing body of academic literature establishes multilingual news media as a powerful, yet underutilized, resource for this purpose. The core hypothesis, which this research survey explores, is that news articles contain latent, high-frequency signals that serve as effective proxies for on-the-ground food insecurity drivers. By leveraging advanced Natural Language Processing (NLP) and geospatial analysis, these textual signals can be extracted, quantified, and mapped to provide a real-time view of emerging risks.
+
+This document provides a review of the foundational research that will inform the technical implementation of the Food Crisis Early Warning System assessment. It synthesizes insights from state-of-the-art studies to establish a scientifically-grounded basis for addressing the assessment's central challenges: the lack of ground truth, the complexity of multilingual data, and the integration of geospatial intelligence.
+
+## 2. Foundational Research for News-Based Food Security Monitoring
+
+Our methodological approach is built upon the findings of two pivotal studies that define the state-of-the-art in using news media for crisis prediction. These papers provide the theoretical and practical basis for the modeling and analysis to be conducted.
+
+1.  **Balashankar, A., et al. (2023). "Predicting food crises using news streams." *Science Advances*.** This study serves as the primary blueprint for the project's feature engineering phase. The authors successfully demonstrate that a predefined lexicon of risk factors can be systematically extracted from millions of news articles to create quantitative "news indicators." Their key finding was that these news-derived time-series indicators, when integrated into a machine learning model, could predict food crises at a granular, district-level up to 12 months in advance. This approach significantly outperformed traditional models that lacked news-derived features. The direct relevance of this paper is its validation of a lexicon-based approach, which aligns perfectly with the 167 predefined risk factors provided for this assessment.
+
+2.  **van Wanrooij, C., et al. (2024). "Unsupervised news analysis for enhanced high-frequency food insecurity assessment." *Decision Sciences*.** This research provides a robust solution to the assessment's most significant constraint: the absence of ground-truth labels for food insecurity. The authors pioneer an unsupervised approach, using neural topic modeling to identify latent risk patterns in news data without relying on pre-labeled examples of crises. Their work is critical as it validates the use of unsupervised methods, such as anomaly detection, as a credible means of identifying unusual spikes in risk-related reporting and framing the output as a monitoring and alerting system rather than a direct prediction model. This unsupervised philosophy is central to developing a functional system in a real-world, data-scarce environment.
+
+## 3. Synthesis and Forward Outlook
+
+The reviewed literature confirms that a news-driven early warning system is not only feasible but represents a significant advancement over traditional monitoring methods. The work of Balashankar et al. provides a clear and validated methodology for transforming unstructured text into quantitative risk indicators using a predefined lexicon. Simultaneously, the research by van Wanrooij et al. offers a powerful, unsupervised framework for deriving actionable insights from these indicators in the absence of direct ground-truth data.
+
+This literature review establishes the core scientific principles upon which our subsequent modeling work will be built. The next phase of this project will involve the technical implementation of these concepts in a multi-stage modeling pipeline designed to extract, geolocate, and analyze food insecurity signals from the provided news corpus.
