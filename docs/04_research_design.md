@@ -1,10 +1,10 @@
 # Research Design: An Implementation Plan**
 
-## 1. Introduction and Objective
+## Introduction and Objective
 
 This document operationalizes the **Research Model** by providing a detailed implementation plan for the Food Crisis Early Warning System. The objective is to translate the five-stage conceptual framework into a concrete set of data processing steps, model selections, and analytical techniques. This research design will serve as the direct blueprint for the accompanying Jupyter Notebook, ensuring that the implementation is rigorous, reproducible, and directly aligned with the project's goals.
 
-## 2. Stage 1: Exploratory Data Analysis (EDA) and Data Preprocessing
+## Stage 1: Exploratory Data Analysis (EDA) and Data Preprocessing
 
 Before implementing the main modeling pipeline, a foundational phase of EDA and preprocessing is required to understand and clean the data.
 
@@ -16,9 +16,9 @@ Before implementing the main modeling pipeline, a foundational phase of EDA and 
 
 * **Data Preprocessing:**
     * **News Article Cleaning:** A standardized text preprocessing function will be developed and applied to the `body` column of both news DataFrames. This function will remove HTML tags, normalize whitespace, and remove URLs/special characters.
-    * **Sentence Tokenization:** The cleaned text of each article will be segmented into a list of sentences using the `nltk.sent_tokenize` library.
+    * **Sentence Tokenization:** The cleaned text of each article will be segmented into a list of sentences using a **custom regular expression**. This dependency-free approach ensures consistent tokenization across different environments by splitting the text based on common sentence-ending punctuation (e.g., periods, question marks, exclamation points).
 
-## 3. Implementation of the Five-Stage Pipeline
+## Implementation of the Pipeline
 
 ### **Stage 2: Multilingual Risk Factor Extraction**
 
@@ -55,7 +55,7 @@ Before implementing the main modeling pipeline, a foundational phase of EDA and 
 * **Qualitative Validation:**
     * A function will be created to retrieve and display the headlines of news articles that contributed to any flagged anomaly, providing a direct narrative link between the quantitative alert and on-the-ground reporting.
 
-## 4. Technical Stack Summary
+## Technical Stack Summary
 
 The implementation will rely on the following core Python libraries:
 
