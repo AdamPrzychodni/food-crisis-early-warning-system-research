@@ -22,7 +22,7 @@ Before implementing the main modeling pipeline, a foundational phase of EDA and 
 
 ### **Stage 2: Multilingual Risk Factor Extraction**
 
-* **Model Selection and Implementation:**
+* **Model Selection:**
     * **Model:** We will use the `facebook/xlm-roberta-base` model, a powerful multilingual transformer.
     * **Library:** The implementation will be handled through the `pipeline` function from the Hugging Face `transformers` library, specifically using the `zero-shot-classification` task.
     * **Execution:** For each sentence, the pipeline will be run with the 167 English risk factors as `candidate_labels`. A confidence threshold of **0.80** will be set to classify a sentence as containing a risk mention.

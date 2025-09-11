@@ -24,3 +24,8 @@ seaborn
 wordcloud
 
 pyahocorasick
+transformers 
+torch 
+accelerate
+sentence-transformers
+googletrans
