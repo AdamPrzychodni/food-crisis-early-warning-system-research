@@ -53,11 +53,3 @@ This document operationalizes the **Research Model** by providing a detailed imp
     * **Aggregation:** Data will be grouped by `date` and `district_key` to get daily raw counts of risk factors.
     * **Normalization:** Raw counts will be normalized by the total article count per district per day.
     * **Index Calculation:** Thematic and Composite Risk Indices (CRI) will be calculated by averaging the normalized scores based on category mappings.
-
----
-
-### **Stage 5: Unsupervised Anomaly Detection**
-
-* **Objective:** To automatically flag unusual spikes in risk, demonstrating the system's utility as an early warning tool.
-* **Algorithm:** A **moving average-based z-score** method.
-* **Implementation:** A 7-day rolling window will be used to calculate the moving average and standard deviation for each district's CRI. An anomaly will be flagged if the **z-score is greater than 2.0**.
