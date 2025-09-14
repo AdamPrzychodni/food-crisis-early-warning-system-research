@@ -146,6 +146,6 @@ This project was developed as part of a take-home assessment for AI research rol
 
 ---
 
-👤 **Author**: Adam Przychodni
-📧 **Email**: [adam.przychodni@gmail.com](mailto:adam.przychodni@gmail.com)
-🌱 **Focus**: AI for social good & humanitarian impact
+- 👤 **Author**: Adam Przychodni
+- 📧 **Email**: [adam.przychodni@gmail.com](mailto:adam.przychodni@gmail.com)
+- 🌱 **Focus**: AI for social good & humanitarian impact
